@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buttons</title>
+        <style>
+            .heading {
+    font-family: sans-serif;
+}
+
+.button{
+    border-radius: 25px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    color: white;
+    background-color: rgb(0, 129, 11);
+    border: 0cap;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgb(0, 54, 21); 
+    /* box-shadow: 0px-> move right, 4px-> move down, 4px-> blur */
+
+    &.button--secondary{
+        background-color: rgb(255, 215, 215);
+        color: rgb(154, 0, 0);
+        border: 2px solid;
+        border-color: rgb(154, 0, 0);
+        box-shadow: none;
+    }
+
+    &.button--disabled{
+        background-color: rgb(173, 172, 172);
+        box-shadow: none;
+    }
+
+    &.button--freestyle{
+        background-color: rgb(255, 196, 0);
+        color:rgb(124, 17, 17);
+        border-radius: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-shadow: inset 0px 0px 10px rgb(146, 66, 0);
+        
+    }
+}
+        </style>
+    </head>
+
+    <body>
+        <h2 class="heading">Primary Button</h2>
+        <button class="button">BUY NOW</button>
+
+        <h2 class="heading">Secondary Button</h2>
+        <button class="button button--secondary">BUY NOW</button>
+
+        <h2 class="heading">Disabled Button</h2>
+        <button class="button button--disabled">BUY NOW</button>
+
+        <h2 class="heading">My Fourth Button</h2>
+        <button class="button button--freestyle">BUY NOW</button>
+    </body>
+    </html>
